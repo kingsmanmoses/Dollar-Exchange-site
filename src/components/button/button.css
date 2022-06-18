@@ -1,0 +1,130 @@
+:root {
+  --primary: #f76e11;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  padding: 10px 22px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.btn--primary {
+  background-color: var(--primary);
+  color: #010606;
+  border: 1px solid var(--primary);
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+}
+
+.btn--medium {
+  padding: 8px 20px;
+  font-size: 18px;
+}
+
+.btn--large {
+  padding: 12px 26px;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.btn--mobile {
+  text-align: center;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  white-space: nowrap;
+  background: #f76e11;
+  color: #010606;
+  padding: 16px 24px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+/* .btn--mobile:hover {
+  transition: all 0.3s ease-in-out;
+  background: #010606;
+  color: #fff;
+} */
+
+.btn--wide {
+  padding: 12px 64px;
+  font-size: 20px;
+}
+
+/* .btn--large:hover,
+.btn--medium:hover,
+.btn--mobile:hover {
+  transition: all 0.3s ease-out;
+  background: #fff;
+  color: #242424;
+} */
+
+.btn--wide:hover {
+  color: #fff;
+  background-color: #f00946;
+  transition: all 0.2s ease-out;
+}
+
+.blue {
+  background-color: #276afb;
+  color: #fff;
+  border: none;
+}
+
+.red {
+  background-color: #f00946;
+  color: #fff;
+  border: none;
+}
+
+.primary {
+  background-color: #f76e11;
+  color: #010606;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+.primary:hover {
+  background-color: #276afb;
+  color: #fff;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.green {
+  background-color: #f76e11;
+  color: #010606;
+  border: none;
+}
+.orange {
+  background-color: #f76e11;
+  color: #010606;
+  border: none;
+}
+.orange:hover {
+  background-color: #fff;
+}
+.green:hover {
+  background-color: #fff;
+}
+
+.btn-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  height: 100%;
+  width: 100%;
+}

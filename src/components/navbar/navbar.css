@@ -1,0 +1,165 @@
+.navbar {
+  background: transparent;
+  height: 80px;
+  margin-top: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar.active {
+  background: #000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  padding: 0 24px;
+  max-width: 1100px;
+}
+
+.nav-logo {
+  color: #fff;
+  justify-self: flex-start;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mobile-icon {
+  display: none;
+}
+
+.btn-menu {
+  margin-left: 220px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin-right: -22px;
+}
+
+.nav-item {
+  height: 80px;
+  border-bottom: 2px solid transparent;
+}
+/* .nav-item:hover {
+  border-bottom: 3px solid #01bf71;
+} */
+
+.nav-links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+}
+.nav-links:active {
+  border-bottom: 3px solid #f76e11;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+}
+/* This is for the old css button I implemented before the new button */
+/* .navbtn-link {
+  border-radius: 50px;
+  background: #01bf71;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: #010606;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+} */
+
+/* .navbtn-link:hover {
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+  color: #010606;
+} */
+
+@media screen and (max-width: 960px) {
+  nav {
+    transition: 0.8s all ease;
+  }
+  .mobile-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+  .nav-links:hover {
+    color: #f76e11;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  }
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-item:hover {
+    border: none;
+  }
+
+  .btn-menu.active {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .nav-menu.active {
+    background: #000;
+    left: 0;
+    opacity: 1;
+    transition: all 0.6s ease;
+    z-index: 1;
+  }
+
+  .nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+}
